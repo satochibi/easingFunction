@@ -111,6 +111,7 @@ public class ObjectMover : MonoBehaviour
 			case EasingFunction.EaseInOutQuad:
 				if (duration < T0 / 2)
 				{
+					inOutSwitch = false;
 					this.transform.position =
 					new Vector3(
 						easeInQuad(duration, T0 / 2, diff.x / 2),
